@@ -39,12 +39,12 @@ class AutoRun:
         self.boy.frame = (self.boy.frame + 1) % 8
         if self.boy.face_dir == 1 and self.boy.dir == 1:
             if self.boy.x <= 800:
-                self.boy.x += self.boy.dir * 5
+                self.boy.x += self.boy.dir * 10
             else:
                 self.boy.face_dir, self.boy.dir = -1, -1
         elif self.boy.face_dir == -1 and self.boy.dir == -1:
             if self.boy.x >= 0:
-                self.boy.x += self.boy.dir * 5
+                self.boy.x += self.boy.dir * 10
             else:
                 self.boy.face_dir, self.boy.dir = 1, 1
 
