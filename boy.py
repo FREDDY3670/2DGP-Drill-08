@@ -30,13 +30,14 @@ class AutoRun:
         self.boy = boy
 
     def enter(self,eve):
-        self.boy.dir = 0
+        self.boy.dir = self.boy.face_dir
 
     def exit(self,eve):
         pass
 
     def do(self):
         self.boy.frame = (self.boy.frame + 1) % 8
+
 
     def draw(self):
         if self.boy.face_dir == 1:  # right
