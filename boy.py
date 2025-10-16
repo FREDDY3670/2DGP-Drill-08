@@ -166,3 +166,5 @@ class Boy:
     def handle_event(self, event):
         self.state_machine.handle_state_event(('INPUT', event))
         pass
+
+#Drill#08 제출
