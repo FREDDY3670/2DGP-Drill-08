@@ -31,6 +31,7 @@ class AutoRun:
 
     def enter(self,eve):
         self.boy.dir = self.boy.face_dir
+        self.autorun_start_time = get_time()
 
     def exit(self,eve):
         pass
